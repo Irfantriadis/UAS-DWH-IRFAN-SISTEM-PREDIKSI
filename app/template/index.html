@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>PREDIKSI</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/stylelanding.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body id="top">
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">PREDIKSI HARGA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="img">
+            <img src="/static/img/price-tag.png">
+        </div>
+        <div class="login-content">
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQHiFuuHafPmggEK-gCZ8mFYC_u7CNCs9K9bnz_8p540QaQx7JyLOjZSUDyvAD6VF41KFwF096DlB-c/pubhtml?gid=964522230&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+            <form action="/prediksi" method="post">
+                <h2 class="title">Masukan Tahun Prediksi</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <!-- <i class="fas fa-lock"></i> -->
+                    </div>
+                    <div class="div">
+                        <h5>Tahun</h5>
+                        <input type="text" class="input" name="tahun" required="required">
+                    </div>
+                </div>
+                <br>
+                <input type="submit" value="Prediksi">
+                <br>
+                {{ prediction_text }}
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created By PREDIKSI HARGA | &copy;
+            2022 All rights reserved.</span>
+    </footer>
+
+    <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+
+</html>
